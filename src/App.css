@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab .button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.tab .button:hover {
+  background-color: #ddd;
+}
+
+.active{
+  font-weight: bold;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
