@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/upstox/static/css/main.b87fd5f9.chunk.css",
+    "main.js": "/upstox/static/js/main.19b52a81.chunk.js",
+    "main.js.map": "/upstox/static/js/main.19b52a81.chunk.js.map",
+    "runtime-main.js": "/upstox/static/js/runtime-main.3caa4f35.js",
+    "runtime-main.js.map": "/upstox/static/js/runtime-main.3caa4f35.js.map",
+    "static/js/2.e99e7472.chunk.js": "/upstox/static/js/2.e99e7472.chunk.js",
+    "static/js/2.e99e7472.chunk.js.map": "/upstox/static/js/2.e99e7472.chunk.js.map",
+    "index.html": "/upstox/index.html",
+    "precache-manifest.d1773a541472a097990073d34b04b85a.js": "/upstox/precache-manifest.d1773a541472a097990073d34b04b85a.js",
+    "service-worker.js": "/upstox/service-worker.js",
+    "static/css/main.b87fd5f9.chunk.css.map": "/upstox/static/css/main.b87fd5f9.chunk.css.map",
+    "static/js/2.e99e7472.chunk.js.LICENSE.txt": "/upstox/static/js/2.e99e7472.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/upstox/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3caa4f35.js",
+    "static/js/2.e99e7472.chunk.js",
+    "static/css/main.b87fd5f9.chunk.css",
+    "static/js/main.19b52a81.chunk.js"
+  ]
+}
