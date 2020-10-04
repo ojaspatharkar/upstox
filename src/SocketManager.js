@@ -4,12 +4,11 @@ class SocketManager {
     constructor(url) {
         this.socket = openSocket(url);
         this.interval = null;
-        console.log(this.socket)
         this.socket.on('connect', () => {
             console.log("Connected")
         })
         this.socket.on('disconnect', () => {
-            alert("Disconnected from server")
+            console.log("Disconnected from server")
         })
     }
     subscribeToQuotes(successCallback, erorCallback) {

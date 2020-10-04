@@ -34,6 +34,15 @@ export default function Router() {
               )
             }}
           />
+          <Route
+            exact
+            path="/upstox"
+            render={() => {
+              return (
+                  <Redirect to="/overview" />
+              )
+            }}
+          />
           <Route exact path="/overview">
             <Overview />
           </Route>
