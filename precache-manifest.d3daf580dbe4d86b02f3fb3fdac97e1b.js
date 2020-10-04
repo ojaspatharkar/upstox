@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c99775e381a91b61b7d1bb7924737be1",
+    "revision": "b41e76af79c08bc6fadc3f8c44f2271c",
     "url": "/upstox/index.html"
   },
   {
-    "revision": "e7c9916bd1b640aba89c",
+    "revision": "8539e58458c818ee2510",
     "url": "/upstox/static/css/main.b87fd5f9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/upstox/static/js/2.e99e7472.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e7c9916bd1b640aba89c",
-    "url": "/upstox/static/js/main.19b52a81.chunk.js"
+    "revision": "8539e58458c818ee2510",
+    "url": "/upstox/static/js/main.cb50be38.chunk.js"
   },
   {
     "revision": "d3f24be24c7e39c4d845",
