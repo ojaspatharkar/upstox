@@ -51,6 +51,11 @@ export function register(config) {
         registerValidSW(swUrl, config);
       }
     });
+
+    window.addEventListener('fetch', () => {
+      alert("Fetching")
+    })
+
   }
 }
 
