@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactApexChart from 'react-apexcharts'
-import { makeAPICall } from '../common';
+import { makeAPICall, createStckData } from '../common';
 import config from '../config';
 
 class Overview extends Component {
@@ -17,23 +17,19 @@ class Overview extends Component {
 
     getOHLCData() {
         let prams = {
-            url: 'http://kaboom.rksv.net/api/historical?interval=1'
+            url: config.historicApiUrl
         }
         makeAPICall(prams, (data) => {
             let stocksData = []
             for (let item of data) {
-                let stockData = item.split(",")
-                if (stockData && stockData.length) {
-                    stocksData.push({
-                        x: new Date(+stockData[0]),
-                        y: stockData.slice(1, 5)
-                    })
+                let stockObj = createStckData(item)
+                if(stockObj){
+                    stocksData.push(stockObj)
                 }
             }
             this.setState({ stocksData })
         });
     }
-
 
     render() {
         let {stocksData} = this.state
@@ -43,7 +39,7 @@ class Overview extends Component {
                     options={config.historicChartOptions}
                     series={[{ data : stocksData }]}
                     type="candlestick"
-                    height={350} width={1000}
+                    height={450} width={"100%"}
                 />
             </div>
         )

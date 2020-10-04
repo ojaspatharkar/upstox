@@ -1,8 +1,9 @@
 let config = {}
+config.historicApiUrl = "http://kaboom.rksv.net/api/historical?interval=1"
+config.socketURL = "http://kaboom.rksv.net/watch"
 config.historicChartOptions = {
     chart: {
-        type: 'candlestick',
-        height: 350,
+        type: 'candlestick'
     },
     title: {
         text: 'Historic data',
