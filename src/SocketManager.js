@@ -4,6 +4,7 @@ class SocketManager {
     constructor(url) {
         this.socket = openSocket(url);
         this.interval = null;
+        console.log(this.socket)
         this.socket.on('connect', () => {
             console.log("Connected")
         })

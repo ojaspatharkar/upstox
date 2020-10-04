@@ -9,12 +9,21 @@ export const makeAPICall = (params, successCallback) => {
   })
     .then((response) => response.json())
     .then((data) => {
+      if(params.allowCaching){
+        localStorage['historicData'] = JSON.stringify({data : data})
+      }
       if (successCallback) {
         successCallback(data)
       }
     })
     .catch((err) => {
-      alert("Error : " + err)
+      let historicData = localStorage['historicData']
+      if(historicData && successCallback){
+        successCallback(JSON.parse(historicData).data)
+      }
+      else{
+        alert("Network error")
+      }
     })
 }
 

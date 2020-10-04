@@ -69,12 +69,20 @@ class Livechart extends Component {
             this.state.options
           );
         this.chart.render();
+        let liveData = localStorage['liveData']
+        if(liveData){
+            this.updateLiveData(JSON.parse(liveData).data)
+        }
     }
 
     updateLiveData(liveData) {
-        let data = createStckData(liveData)
-        this.counter += 1
-        this.chart.updateSeries([{data : [data]}])
+        if(liveData){
+            let data = createStckData(liveData)
+            this.counter += 1
+            this.chart.updateSeries([{data : [data]}])
+            localStorage['liveData'] = JSON.stringify({data : liveData})
+        }
+        
     }
 
     errorHandler() {

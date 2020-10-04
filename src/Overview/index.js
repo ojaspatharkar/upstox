@@ -17,7 +17,8 @@ class Overview extends Component {
 
     getOHLCData() {
         let prams = {
-            url: config.historicApiUrl
+            url: config.historicApiUrl,
+            allowCaching : true
         }
         makeAPICall(prams, (data) => {
             let stocksData = []
