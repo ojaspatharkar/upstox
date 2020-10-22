@@ -56,6 +56,7 @@ class Livechart extends Component {
                 series : [{ data : [] }],
             },
         }
+        this.chartData = [{data : []}]
         this.counter = 0
         this.firstData = null
         this.updateLiveData = this.updateLiveData.bind(this);
@@ -75,11 +76,14 @@ class Livechart extends Component {
         }
     }
 
+
     updateLiveData(liveData) {
+
         if(liveData){
             let data = createStckData(liveData)
+            this.chartData[0].data.push(data)
             this.counter += 1
-            this.chart.updateSeries([{data : [data]}])
+            this.chart.updateSeries(this.chartData)
             localStorage['liveData'] = JSON.stringify({data : liveData})
         }
         
